@@ -5,8 +5,8 @@ from django.core.mail import send_mail
 
 @shared_task
 def send_mail_task(email, subject, message,):
-    send_mail('CELERY YEAH','BEN STOKES',
-                'chintz.91@gmail.com',['amazed.abhi15@gmail.com'],
+    send_mail('CELERY YEAH','hello',
+                'chintz.91@gmail.com'o,['amazed.abhi15@gmail.com'],
                 fail_silently=False)
     send_mail(subject,message,
                 'chintz.91@gmail.com',[email],
